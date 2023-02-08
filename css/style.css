@@ -1,0 +1,143 @@
+/* Author:Anseena A Sharafudeen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+.banner {
+    background-image: url("../images/academy-banner.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.banner-text {
+    text-align: right;
+    padding-right: 100px;
+}
+.banner-training {
+    height: 100vh;
+}
+
+.banner-training-text {
+    background-color: rgb(20, 20, 39);
+    color: rgb(20, 238, 242);
+    font-family: serif;
+    font-size: 25px;
+    margin: -9.3%;
+}
+.banner-training-text p::before {
+    content: "{";
+    color: rgb(182, 30, 80);
+}
+.banner-training-text p::after {
+    content: "}";
+    color: rgb(182, 30, 80);
+}
+.blockquote {
+    text-align: center;
+}
+.courses {
+    background-image: url("../images/modulebg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    color: white;
+    margin-top: 3%;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 25px;
+    justify-content: center;
+    margin: 0;
+}
+.courses-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.course-border {
+    border-radius: 10px;
+    background-color: rgba(9, 8, 8, 0.614);
+    padding: 15px 70px 15px 70px;
+}
+.discussion {
+    flex-wrap: wrap;
+}
+.discussion-img1 {
+    background-image: url("../images/testsbg.jpg");
+    width: 50%;
+    height: 400px;
+    padding: 25px;
+}
+.discussion-img2 {
+    background-image: url("../images/intrvwbg.jpg");
+    width: 50%;
+    height: 400px;
+    padding: 25px;
+}
+.discussion-text {
+    flex-direction: column;
+    align-items: center;
+    padding: 25%;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.join {
+    margin-top: 4%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.join-heading {
+    font-size: 25px;
+}
+.footer {
+    width: 100%;
+    justify-content: center;
+}
+.footer-contact1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-contact2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer {
+    text-align: center;
+}
+/* mediaquery */
+@media screen and (max-width: 576px) {
+    .container-fluid {
+        padding: 0;
+    }
+    .banner {
+        background-image: none;
+        background-color: rgb(219, 215, 215);
+        margin: 0;
+    }
+
+    .banner-training-text {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .banner {
+        background-image: none;
+        background-color: rgb(219, 215, 215);
+    }
+    .discussion-img1 {
+        width: 100%;
+        background-size: cover;
+    }
+    .discussion-img2 {
+        width: 100%;
+        background-size: cover;
+    }
+}
